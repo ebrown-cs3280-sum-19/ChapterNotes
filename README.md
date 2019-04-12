@@ -1,3 +1,5 @@
 # Lecture Notes Repo #
 
-I will be uploading lecture notes here throughout the semester.
+## Note Files ##
+
+* [Chapter 1 - Intro to .NET](Chapter1Notes.md)
