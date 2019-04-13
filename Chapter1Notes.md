@@ -22,7 +22,7 @@
   * XML
   * JSON
   * YAML
-  
+
 ## .NET Framework ##
 
 * .NET Framework Class Library (FCL) is a collection of classes that enable you to develop apps quickly.
@@ -37,7 +37,8 @@
     * automatic memory management and more.
 * The program compiled into Microsoft Intermediate Language (MSIL)
 * Then the MSIL is compiled into machine code for a particular platform when the code executes. (JIT - Just In Time Compiler)
-* This scheme (like java) allows for platform independence. Onces the code is written in can be executed on many different types of computers without modification.
+* This scheme (like java) allows for platform independence. Once the code is written in can be executed on many
+different types of computers without modification.
 * .NET framework must be installed on a computer for a program to run
 * Language Interoperability - components written in different .NET languages can be combined into one unified program.
 * .NET languages
