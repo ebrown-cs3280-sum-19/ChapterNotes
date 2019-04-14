@@ -6,11 +6,12 @@
 * OOP Terminology
   * **Classes** - Reusable software components. Similar to blueprints, they are used to create an object in memory.
   * **Instance** - The process of building an object from a class is called *instantiation*. An object is referred to as an instance of its class.
-  * **Methods** - Behaviors of an object is housed in methods. It hides the implementation of the behavior from the user.
-  * **Instance Variables** - Attributes of an object defined in the class.
+  * **Methods** - Behaviors of an object are written in functions called methods. It hides the implementation of the behavior from the user.
+  * **Instance Variables** - Attributes of an object defined in the class. Usually are private.
   * **Properties** - Contain accessors for getting and setting instance variables.
   * **Encapsulation** - Hiding implementation details within an object.
   * **Inheritance** - Creating a new object that absorbs the characteristics of another object.
+  * **Polymorphism** - Allows the calling of objects that share the same base class as if they are all the same base class. This is the most powerful concept behind OOP. It's simple in theory but hard to master.
 * C# has its roots in C, C++ and Java
   * Java came before C# and Java was very popular so C# borrows a lot from Java.
   * This helps java developers transition to C#
