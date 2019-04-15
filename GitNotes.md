@@ -36,7 +36,7 @@ Install for Windows https://gitforwindows.org
   1. create a new project folder (if you are using an ide just use the folder it creates)
   2. in the console change directory to it.
         >\> cd path/to/my/project
-  3. initialize new git repo 
+  3. initialize new git repo
         >\> git init
   4. add remote repo
         >\> git remote add origin https://.github.com/the-url-you-copied/repo.git
@@ -49,7 +49,7 @@ Install for Windows https://gitforwindows.org
   4. clone the repo
         >\> git clone https://.github.com/the-url-you-copied/repo.git
 
-### Tracking Changes ###
+### Committing Changes ###
 
 * Now that you have a local repo we can now start tracking code changes
 * You have 3 parts of your local repository
@@ -58,8 +58,12 @@ Install for Windows https://gitforwindows.org
   3. HEAD - points to the last commit you made
 * commiting changes
     1. Add changed files to the `Index`
-        >\> git add <filename>
+        >\> git add \<filename>
     2. Commit the index files to the `HEAD`
         >\> git commit -m "Commit message"
     3. Push the changes to the remote repo
         >\> git push origin master
+
+### Workflow Diagram ###
+
+![git workflow diagram](images/git-workflow.png "git workflow diagram")
