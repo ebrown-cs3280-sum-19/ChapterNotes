@@ -6,19 +6,23 @@
 * OOP Terminology
   * **Classes** - Reusable software components. Similar to blueprints, they are used to create an object in memory.
   * **Instance** - The process of building an object from a class is called *instantiation*. An object is referred to as an instance of its class.
+![Class vs Instance](images/class-instance.png)
   * **Methods** - Behaviors of an object are written in functions called methods. It hides the implementation of the behavior from the user.
   * **Instance Variables** - Attributes of an object defined in the class. Usually are private.
   * **Properties** - Contain accessors for getting and setting instance variables.
-  * **Encapsulation** - Hiding implementation details within an object.
+  * **Encapsulation** - Hiding implementation details within an object. 
+![Encapsulation Image](images/Encapsulation.png)
   * **Inheritance** - Creating a new object that absorbs the characteristics of another object.
+![Inheritance Image](images/inheritance.jpg)
   * **Polymorphism** - Allows the calling of objects that share the same base class as if they are all the same base class. This is the most powerful concept behind OOP. It's simple in theory but hard to master.
+![Polymorphism Image](images/polymorphism.png)
 * C# has its roots in C, C++ and Java
   * Java came before C# and Java was very popular so C# borrows a lot from Java.
   * This helps java developers transition to C#
 * Procedural languages such as FORTRAN, Pascal, BASIC and C
 * Procedural - Top down with use of GOTO statements
 * Object Oriented Languages like, C++, C#, Java, python, javascript, etc.
-* OO uses objects to mimic real world objects. MAkes it easier to reuse and maintain
+* OO uses objects to mimic real world objects. Makes it easier to reuse and maintain
 * Data serialization languages
   * XML
   * JSON
