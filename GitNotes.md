@@ -84,6 +84,14 @@ Rebase vs Merge
 * It does the same thing as a merge it just looks like you did all your work in the rebased branch
 * The best way to learn this is to use a git visualizer simulation 
 
+## Ignoring Files ##
+
+* You may have environment files or IDE config filesthat are specific to your system or large asset files that you don't want to store in the remote repo.
+* You can ignore these files by adding their names to a file in the repo named `.gitignore`. 
+* The file supports globs, ie. `*.env` will ignore 
+all files that end with `.env`.
+* A good resource for predefined ignore files is [gitignore.io](https://gitignore.io).
+
 ## Advanced Workflows ##
 
 ### The reflog ###
@@ -94,7 +102,8 @@ You will start to love git once you learn to use `git reflog`
 * reverse a bad commit and rewrite history
 * one of the most powerful things in git
 * with great power comes something something
-* just be careful
+* It's fairly easy to undo most actions but you should always be sure of what you are doing.
+* If all else fails, delete and reclone
 
 ![git reflog](images/git-reflog.png)
 
@@ -105,7 +114,7 @@ You will start to love git once you learn to use `git reflog`
 * this will put you `working directory` into the same state it was before that last action
 * you can then keep working or if you need to set the remote repo in the same state you would then run:
   `git push --force` 
-  >**WARNING:** Be very careful when rewriting history on the remote. This cannot be undone and you will cause all other contributors to get out of sync. They will have to reclone the repo.
+  >**WARNING:** Be very careful when rewriting history on the remote. This cannot be undone and you will cause all other cloned repos to get out of sync. They will have to reclone the repo.
 
 ### Aliases ###
 
