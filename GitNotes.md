@@ -83,6 +83,7 @@ Rebase vs Merge
 * When rebasing git will take all the commits you made on one branch and move those on top of the other
 * It does the same thing as a merge it just looks like you did all your work in the rebased branch
 * The best way to learn this is to use a git visualizer simulation 
+  * [Git visualizer](https://git-school.github.io/visualizing-git/)
 
 ## Ignoring Files ##
 
@@ -120,11 +121,11 @@ You will start to love git once you learn to use `git reflog`
 
 Inside your `.gitconfig` file you can define aliases to speed up your workflow
 
-Heres an example I use with `git log`
+Heres an example with `git log`
 
 * visualizes your repo history
 * It can take a lot of parameters
-* Here are a few I like (copy to the bottom of you .gitconfig file)
+* make using `git log` easier with these aliases:
 
     ```(config)
     [alias]
@@ -134,6 +135,6 @@ Heres an example I use with `git log`
         lg = !"git lg1"
     ```
 
-* Example of `git lg2`
+* Example output of `git lg2`
   ![git lg2](images/git-lg2.png)
 
