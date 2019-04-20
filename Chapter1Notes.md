@@ -5,12 +5,12 @@
 * C# is an object-oriented languge with garbage collection
 * OOP Terminology
   * **Classes** - Reusable software components. Similar to blueprints, they are used to create an object in memory.
-  * **Instance** - The process of building an object from a class is called *instantiation*. An object is referred to as an instance of its class.
+  * **Instance** - The process of building an object from a class is called *instantiation*. An object is an *instance* of its class.
 ![Class vs Instance](images/class-instance.png)
   * **Methods** - Behaviors of an object are written in functions called methods. It hides the implementation of the behavior from the user.
   * **Instance Variables** - Attributes of an object defined in the class. Usually are private.
   * **Properties** - Contain accessors for getting and setting instance variables.
-  * **Encapsulation** - Hiding implementation details within an object. 
+  * **Encapsulation** - Hiding implementation details within an object/class. 
 ![Encapsulation Image](images/Encapsulation.png)
   * **Inheritance** - Creating a new object that absorbs the characteristics of another object.
 ![Inheritance Image](images/inheritance.jpg)
