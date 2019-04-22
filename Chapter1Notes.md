@@ -1,4 +1,4 @@
-# Chapter 1 - Intro to .NET ##
+# Chapter 1 - Intro to .NET #
 
 ## General OO Notes ##
 
