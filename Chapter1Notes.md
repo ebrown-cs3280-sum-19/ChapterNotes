@@ -2,7 +2,6 @@
 
 ## General OO Notes ##
 
-* C# is an object-oriented languge with garbage collection
 * OOP Terminology
   * **Classes** - Reusable software components. Similar to blueprints, they are used to create an object in memory.
   * **Instance** - The process of building an object from a class is called *instantiation*. An object is an *instance* of its class.
@@ -16,14 +15,31 @@
 ![Inheritance Image](images/inheritance.jpg)
   * **Polymorphism** - Allows the calling of objects that share the same base class as if they are all the same base class. This is the most powerful concept behind OOP. It's simple in theory but hard to master.
 ![Polymorphism Image](images/polymorphism.png)
+* C# is an object-oriented languge with garbage collection
 * C# has its roots in C, C++ and Java
   * Java came before C# and Java was very popular so C# borrows a lot from Java.
   * This helps java developers transition to C#
-* Procedural languages such as FORTRAN, Pascal, BASIC and C
+
+## Programming Languages and Paradigms ##
+
 * Procedural - Top down with use of GOTO statements
-* Object Oriented Languages like, C++, C#, Java, python, javascript, etc.
-* OO uses objects to mimic real world objects. Makes it easier to reuse and maintain
-* Data serialization languages
+  * FORTRAN
+  * Pascal
+  * BASIC
+  * C
+* Object Oriented - uses objects to mimic real world objects. Makes it easier to reuse and maintain
+  * C++
+  * C#
+  * Java
+  * python
+  * javascript
+* Functional - Stateless programming, avoids making changes to data. Based on lambda calculus
+  *lisp
+  *Haskell
+  *Clojure
+  *Python (supported)
+  *Javascript (supported)
+* Data serialization languages - Used primarily for data transfer and storage
   * XML
   * JSON
   * YAML
@@ -41,7 +57,7 @@
     * enhanced security,
     * automatic memory management and more.
 * The program compiled into Microsoft Intermediate Language (MSIL)
-* Then the MSIL is compiled into machine code for a particular platform when the code executes. (JIT - Just In Time Compiler)
+* MSIL is compiled into machine code for a particular platform when the code executes. (JIT - Just In Time Compiler)
 * This scheme (like java) allows for platform independence. Once the code is written in can be executed on many
 different types of computers without modification.
 * .NET framework must be installed on a computer for a program to run
