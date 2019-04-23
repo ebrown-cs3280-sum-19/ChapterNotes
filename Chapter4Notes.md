@@ -60,6 +60,7 @@ class Account
 All of the above getter and setter styles are valid in C#
 
 ![name variable](images/name-property.png)
+
 Conceptual view of name instance variable and guarding layer of public methods
 
 ## Custom Accessors ##
