@@ -1,63 +1,19 @@
 # Chapter 4 - Introduction Classes, Objects, Methods and strings #
 
-## Class Review ##
+## C# Classes ##
 
 * Each user defined class becomes a new `type` you can use to create objects
 * This makes C# an **extensible programming language**
 * Classes are encapsulated code segments consisting of data (properties) and behaviors (methods)
 
-## `AccountDriver` Class ##
-
-* We are going to create an `Account` class
-* First we need a class to "drive" the `Account` class
-* This driver class we'll use to instantiate the `Account` and try out it's functionality
-* We'll also create a MS Test class to test the `Account`
-  
-### The Code ###
-
-```[c#]
-using System;
-
-class AccountDriver
-{
-    static void Main()
-    {
-        // create an Account object and assign it to myAccount
-        Account myAccount = new Account();
-
-        // display myAccount's initial name (there isn't one yet);
-        Console.WriteLine($"Initial name is: {myAccount.GetName()}");
-
-        // prompt for and read the name then put the name in the object
-        Console.Write("Enter the name: "); // prompt
-        string theName = Console.ReadLine(); // read the name
-        myAccount.SetName(theName); // put theName in the myAccount object
-
-        // display the name stored in the myAccount object
-        Console.WriteLine($"myAccount's name is: {myAccount.GetName()}");
-    }
-}
-```
-
-Example Output:
-
-```[output]
-Initial name is:
-Enter the name: Jane Green
-myAccount's name is: Jane Green
-```
-
-## The Account Class ##
-
-
-### C# Getter and Setter Styles ###
+## C# Getter and Setter Styles ##
 
 Java style Getter and Setters:
 
 ```[c#]
 class Account
 {
-    private string name;
+    private string name; // instance variable
 
     public string GetName()
     {
@@ -78,8 +34,8 @@ class Account
 {
     private string name;
 
-    public string Name 
-    { 
+    public string Name // C# Property
+    {
         get
         {
             return name;
@@ -97,22 +53,97 @@ Syntactic Sugar:
 ```[c#]
 class Account
 {
-    public string Name { get; set; }
+    public string Name { get; set; } // C# Auto-implemented Property
 }
 ```
 
 All of the above getter and setter styles are valid in C#
 
-### AccountTest Class ###
+![name variable](images/name-property.png)
+Conceptual view of name instance variable and guarding layer of public methods
 
-* Visual Studio has a testing framework built in called MS Test
-* Since it's integrated into VS code it's very easy to get up and running
-* There are other C# frameworks like NUnit and xUnit
-* We'll use MS Test in this class but NUnit and xUnit are great frameworks especially if you are using .net core
+## Custom Accessors ##
+
+* You can apply your own logic to the accessors for validation
+* The following example shows validation for setting an account balance
+* It also makes the setter private so it can only be called within the class, this will protect the balance from outside influence.
 
 ```[c#]
-class AccountTest
-{
-    
+public class Account {
+    public string Name { get; set; } // auto-implemented property
+    private decimal balance; // instance variable
+
+    public Account(string accountName, decimal initialBalance) {
+        Name = accountName;
+        Balance = initialBalance;
+    }
+
+    // Balance property with validation
+    public decimal Balance {
+        get {
+            return balance;
+        }
+        private set { // can only be used within the class
+            // validate blance is greater than 0.0
+            if (value > 0.0m) {
+                balance = value;
+            }
+        }
+    }
 }
 ```
+
+## Constructors ##
+
+* If you don't define a constructor for a class there is a default constructor
+* The default constructor takes no arguments and just creates an object with no values
+* If you define a custom constructor you can no longer use the default constructor
+
+```[c#]
+public Account(string accountName, decimal initialBalance) {
+    Name = accountName;
+    Balance = initialBalance;
+}
+```
+
+## Methods ##
+
+Methods can interact with properties and instance variables.
+
+```[c#]
+public void Deposit(decimal depositAmount) {
+    if (depositAmount > 0.0m) {
+        Balance += depositAmount;
+    }
+}
+// method that debits amount from account balance
+public void Debit(decimal debitAmount) {
+    if ((Balance - debitAmount) >= 0.0m) {
+        Balance -= debitAmount;
+    }
+}
+```
+
+## Test Classes ##
+
+* Unit tests are an important tool for software engineers
+* Visual Studio has an integrated test framework called MS Test
+* Tests for custom classes are vital
+
+### Creating Unit Test Project ###
+
+* After defining a custom class with a public method
+  1. right click on the method > **Create Unit Tests**
+  2. create test wizard will open
+  3. define name schemes for test project, test class and method tests
+  4. click ok to create the test project and unit test
+
+### TDD ###
+
+![TDD](/images/TDD.png)
+
+* Every method should have a unit test written for it
+* The TDD way - RED > GREEN > REFACTOR > REPEAT
+* Following TDD will give you confidence to make code changes and refactoring without getting unexpected results
+
+More on unit tests <https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2019>
