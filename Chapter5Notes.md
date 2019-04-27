@@ -68,3 +68,108 @@ Basic structure where each statement is executed one after the other in the orde
 
 ## Selection Statements ##
 
+### If Single-Selection Statement ###
+
+Psudocode if statement
+
+```[psudocode]
+If student’s grade is greater than or equal to 60
+    Display “Passed”
+```
+
+c# if statement
+
+```[C#]
+if (studentGrade >= 60)
+{
+    Console.WriteLine("Passed");
+}
+```
+
+### `if...else` Double-Selection Statement ###
+
+Psudocode if...else statement
+
+```[psudocode]
+If student's grade is greater than or equal to 60
+      Display "Passed"
+Else
+      Display "Failed"
+```
+
+Psudocode if...else statement
+
+```[C#]
+if (grade >= 60)
+{
+   Console.WriteLine("Passed");
+}
+else
+{
+   Console.WriteLine("Failed");
+}
+```
+
+## Iteration Statements ##
+
+### `while` iteration statement ###
+
+Psudocode while loop
+
+```[psudocode]
+While there are more items on my shopping list
+    Purchase next item and cross it off my list
+```
+
+C# while loop
+
+```[C#]
+int product = 3;
+while (product <= 100)
+{
+    product = 3 * product;
+}
+```
+
+More on iteration statements in chapter 6
+
+## Assignments ##
+
+### Conditional Operator ###
+
+* `?:` can be used in place of an `if..else` statement
+* c#'s only ternary operator
+* takes 3 operands
+* `bool-expression ? true-value : false-value`
+
+```[C#]
+Console.WriteLine(studentGrade >= 60 ? "Passed" : "Failed");
+```
+
+### Compound Assignment Operators ###
+
+Abbreviate assignment operations like this:
+
+`variable = variable operator expression;`
+
+to
+
+`variable operator= expression;`
+
+for example:
+
+`c = c + 3;`
+
+using the compund assignment operator
+
+`c += 3`
+
+The `+=` adds the value of the expression on its right to the variable on it's left and stores it in the variable on the left
+
+other compound assignment operators:
+
+* `+=`
+* `-=`
+* `*=`
+* `/=`
+* `%=`
