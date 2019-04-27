@@ -58,7 +58,7 @@ Basic structure where each statement is executed one after the other in the orde
 * `if` statement performs the action if a condition is true
 * `if` `else` performs an action if a condition is true or performs a different action if it's false
 * `switch` statement performs one of many different actions depending on the value of an expression 
-  * side note: these as well as big if else trees should be avoided
+  * side note: these as well as big if else trees should be avoided higher level code
 
 ### Iteration Structures ###
 
@@ -97,7 +97,7 @@ Else
       Display "Failed"
 ```
 
-Psudocode if...else statement
+C# if...else statement
 
 ```[C#]
 if (grade >= 60)
