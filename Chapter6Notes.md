@@ -113,6 +113,110 @@ double average = (double) total / gradeCounter;
 
 ### `break` Statement ###
 
+* when executed in a while, for, do ...while, switch or foreach causes immediate exit
+
+```[C$]
+int count; // control variable also used after loop terminates
+
+for (count = 1; count <= 10; ++count) // loop 10 times
+{
+    if (count == 5) // if count is 5,
+    {
+        break; // terminate loop
+    }
+
+    Console.Write($"{count} ");
+}
+Console.WriteLine($"\nBroke out of loop at count = {count}");
+```
+
+output
+
+```[output]
+1 2 3 4
+Broke out of loop at count = 5
+```
+
+### `continue` Statement ###
+
+* skips the remaining statements in the loop body and continues with the next iteration of the loop
+
+```[C#]
+for (int count = 1; count <= 10; ++count) // loop 10 times
+{
+    if (count == 5) // if count is 5,
+    {
+        continue; // skip remaining code in loop
+    }
+
+    Console.Write($"{count} ");
+}
+
+Console.WriteLine("\nUsed continue to skip displaying 5");
+```
+
+output
+
+```[output]
+1 2 3 4 6 7 8 9 10
+Used continue to skip displaying 5
+```
+
 ## Logical Operators ##
+
+### C# Logical Operators ###
+
+* AND `&&`
+* OR `||`
+* Negation `!`
+* Boolean AND `&`
+* Boolean OR `|`
+* Boolean XOR `^`
+* Ones Complement `~`
+* Left Shift `<<`
+* Right Shift `>>`
+
+### `&&` AND ###
+
+If you want 2 or more conditions to all be true
+
+```[C#]
+// true for all females 65 and over
+if (gender == 'F' && age >= 65)
+...
+```
+
+`&&` Truth Table
+
+| expression 1 | expression 2 | expression 1 `&&` expression 2 |
+| ------------ | ------------ | ------------------------------ |
+| true         | true         | true                           |
+| false        | true         | false                          |
+| true         | false        | false                          |
+| false        | false        | false                          |
+
+### `||` OR ###
+
+If you just one of 2 or more conditions to be true
+
+```[C#]
+// true if either semseterAverage or semesterFinal are 90 or above
+if (semesterAverage >= 90 || semesterFinal >= 90)
+...
+```
+
+`||` Truth Table
+
+| expression 1 | expression 2 | expression 1 `||` expression 2 |
+| ------------ | ------------ | ------------------------------ |
+| true         | true         | true                           |
+| false        | true         | true                           |
+| true         | false        | true                           |
+| false        | false        | false                          |
+
+### Boolean Operators ###
+
+* Boolean operators are different because they don't "short circuit" the other conditionals
+* They can also be used for bitwise operations
 
 ## Structured-Programming Summary ##
