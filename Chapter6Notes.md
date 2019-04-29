@@ -166,12 +166,12 @@ Used continue to skip displaying 5
 
 ### C# Logical Operators ###
 
-* AND `&&`
-* OR `||`
+* Conditional AND `&&`
+* Conditional OR `||`
 * Negation `!`
-* Boolean AND `&`
-* Boolean OR `|`
-* Boolean XOR `^`
+* Boolean Logical AND `&`
+* Boolean Logical OR `|`
+* Boolean Logical XOR `^`
 * Ones Complement `~`
 * Left Shift `<<`
 * Right Shift `>>`
@@ -214,9 +214,48 @@ if (semesterAverage >= 90 || semesterFinal >= 90)
 | true         | false        | true                           |
 | false        | false        | false                          |
 
-### Boolean Operators ###
+### Boolean Logical Operators ###
 
 * Boolean operators are different because they don't "short circuit" the other conditionals
 * They can also be used for bitwise operations
 
+### Bitwise Operators ###
+
+Bitwise example code
+
+```[C#]
+int a = 60;            /* 60 = 0011 1100 */
+int b = 13;            /* 13 = 0000 1101 */
+int c = 0;
+
+c = a & b;             /* 12 = 0000 1100 */
+Console.WriteLine($"Line 1 - Value of c is {c}");
+
+c = a | b;             /* 61 = 0011 1101 */
+Console.WriteLine($"Line 2 - Value of c is {c}");
+
+c = a ^ b;             /* 49 = 0011 0001 */
+Console.WriteLine($"Line 3 - Value of c is {c}");
+
+c = ~a;                /*-61 = 1100 0011 */
+Console.WriteLine($"Line 4 - Value of c is {c}");
+
+c = a << 2;      /* 240 = 1111 0000 */
+Console.WriteLine($"Line 5 - Value of c is {c}");
+
+c = a >> 2;      /* 15 = 0000 1111 */
+Console.WriteLine($"Line 6 - Value of c is {c}");
+Console.ReadLine();
+```
+
 ## Structured-Programming Summary ##
+
+### Control statements are single-entry/single-exit ###
+
+* because every control statement has a single-entry and exit point you can stack them
+* This allows for nesting as well
+* this keeps programs from becoming complicated therefore easier to debug and read
+* You can take the following diagrams and stack/nest them and you'll always be able to follow a flow of control
+
+![selection and sequence statements](images/selection-structure.png)
+![iteration statement](images/iteration-structure.png)
