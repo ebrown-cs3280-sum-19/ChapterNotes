@@ -7,3 +7,4 @@
 * [Chapter 3 - Intro to C#](Chapter3Notes.md)
 * [Chapter 4 - Introduction Classes, Objects, Methods and string](Chapter4Notes.md)
 * [Chapter 5 - Control Structures Part 1](Chapter5Notes.md)
+* [Chapter 6 - Control Structures Part 2](Chapter6Notes.md)
