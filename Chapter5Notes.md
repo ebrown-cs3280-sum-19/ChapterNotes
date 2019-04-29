@@ -160,7 +160,7 @@ for example:
 
 `c = c + 3;`
 
-using the compund assignment operator
+using the compound assignment operator
 
 `c += 3`
 
