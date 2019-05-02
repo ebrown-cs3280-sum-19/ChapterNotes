@@ -90,3 +90,19 @@ Console.WriteLine($"Welcome to C# programming, {person}!")
 ```
 
 the $ indicates a string for interpolation. Inside the string the `{ }` indicates a variable that's value needs to be inserted
+
+### `@` Character ###
+
+Strings that have the `@` symbol before the double quotes mean that all characters will be literal and will ignore any escape characters.
+
+Example:
+
+```[C#]
+path = @"c:\Users\UserName\Documents"
+```
+
+VS
+
+```[C#]
+path = "c:\\Users\\UserName\\Documents"
+```
