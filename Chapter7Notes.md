@@ -77,3 +77,46 @@ Why is main declared static?
 During app startup, no objects of the class have been created, the `Main` method must be called to begin program execution.
 Declaring `Main` as `static` allows the execution environment to call `Main` without creating an instance of the class
 
+## Calling Methods ##
+
+### Three Ways to Call a Method ###
+
+1. Using a method name by itself to call a method of the same class
+2. Using a reference to an object, followed by the member-access operator (`.`) and the method name to call non-`static` method of referenced object
+3. Using the class name and the `.` operator to call a `static` method of a class
+
+### Three Ways to Return from a Method ###
+
+1. return type `void` with no `return` statement
+2. `return;` with return type `void`
+3. when the method returns a result and executes this statement `return <expression>;`
+
+## Method Example ##
+
+### Maximum Method ###
+
+```[C#]
+class Maximum Finder
+{
+    static void Main()
+    {
+        // static methods can directly call other static methods in the same clas
+        double result = Maximum(2.0, 4.1, 1.1);
+        Console.WriteLine(result); // prints 4.1
+    }
+    static double Maximum(double x, double y, double z)
+    {
+        double maximumValue = x;
+        if (y > maximumValue)
+        {
+            maximumValue = y;
+        }
+        if (z > maximumValue)
+        {
+            maximumValue = z;
+        }
+        return maximumValue
+    }
+}
+```
+
