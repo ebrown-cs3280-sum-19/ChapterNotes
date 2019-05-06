@@ -276,7 +276,7 @@ A **recursive method** is a method that calls itself
 * n! = `n * (n-1) * (n-2) * ... * 1`
 * 1! is equal to 1
 * 0! is equal to 1
-* 5! is 5 * 4 * 3 * 2 * 1 = 120
+* 5! is 5 \* 4 \* 3 \* 2 \* 1 = 120
 
 Nonrecursive implemnation
 
