@@ -290,6 +290,7 @@ for (long counter = number; counter >= 1; --counter)
 ```
 
 ### Recursive Implementation of Factorial ###
+
 ```[C#]
   1   // Fig. 7.17: FactorialTest.cs
   2   // Recursive Factorial method.
