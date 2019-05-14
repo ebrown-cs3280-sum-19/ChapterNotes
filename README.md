@@ -9,3 +9,4 @@
 * [Chapter 5 - Control Structures Part 1](Chapter5Notes.md)
 * [Chapter 6 - Control Structures Part 2](Chapter6Notes.md)
 * [Chapter 7 - Methods](Chapter7Notes.md)
+* [Chapter 8 - Arrays; Introduction to Exception Handling](Chpater8Notes.md)
