@@ -10,4 +10,4 @@
 * [Chapter 6 - Control Structures Part 2](Chapter6Notes.md)
 * [Chapter 7 - Methods](Chapter7Notes.md)
 * [Chapter 8 - Arrays; Introduction to Exception Handling](Chpater8Notes.md)
-* [Chapter 16 - Strings and Characters](Chpater16Notes.md)
+* [Chapter 16 - Strings and Characters](Chapter16Notes.md)
