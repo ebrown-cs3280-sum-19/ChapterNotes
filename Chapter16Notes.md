@@ -10,7 +10,6 @@
 * ie. `122` is 'z' and `10` is '\n'
 * These codes are part of **Unicode**
 
-
 ### Strings ###
 
 * A series of characters
@@ -74,7 +73,7 @@ string3 = "day"
 string4 = "CCCCC"
 ```
 
-In most cases, it’s not necessary to make a copy of an existing string. All string s are immutable—their character contents cannot be changed after they’re created. Also, if there are one or more references to a string (or any reference-type object for that matter), the object cannot be reclaimed by the garbage collector.
+>NOTE: In most cases, it’s not necessary to make a copy of an existing `string`. All `string`s are immutable—their character contents cannot be changed after they’re created. Also, if there are one or more references to a `string` (or any reference-type object for that matter), the object cannot be reclaimed by the garbage collector.
 
 ## `string` Indexer, Length Property and CopyTo Method ##
 
