@@ -200,10 +200,13 @@ line 18 shows the generic method signature with a type constraint of `IComparabl
 
 ## Generic Classes ##
 
+Examples
 * Generic data structures
 * `Stack` of `double`, `Stack` of `int`, `Stack` of `char`
 
 ### Stack Class Declaration ###
+
+Bring it all together
 
 ```[C#]
   1   // Fig. 20.5: Stack.cs
