@@ -154,5 +154,7 @@ If you right click an identifier in Visual Studio then use the Rename… option 
 
 ## Composition ##
 
-
-
+* A class can have objects of value types or reference types (other objects)
+* composition is when you have class members that our objects of other classes
+* ie: `AlarmClock` class could have two `Time` class members - the current time and the alarm time
+* or: `Person` class could have `Mother` and `Father` properties that are references to other `Person` objects
