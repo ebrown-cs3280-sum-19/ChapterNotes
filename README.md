@@ -9,6 +9,6 @@
 * [Chapter 5 - Control Structures Part 1](Chapter5Notes.md)
 * [Chapter 6 - Control Structures Part 2](Chapter6Notes.md)
 * [Chapter 7 - Methods](Chapter7Notes.md)
-* [Chapter 24 - WPF](Chapter24Notes.md)
 * [Chapter 8 - Arrays; Introduction to Exception Handling](Chpater8Notes.md)
 * [Chapter 16 - Strings and Characters](Chapter16Notes.md)
+* [Chapter 10 - Classes and Objects: A Deeper Look](Chapter10Notes.md)
