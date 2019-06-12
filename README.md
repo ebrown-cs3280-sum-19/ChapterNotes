@@ -11,6 +11,6 @@
 * [Chapter 7 - Methods](Chapter7Notes.md)
 * [Chapter 8 - Arrays; Introduction to Exception Handling](Chpater8Notes.md)
 * [Chapter 16 - Strings and Characters](Chapter16Notes.md)
-* [Chapter 10 - Classes and Objects: A Deeper Look](Chapter10Notes.md)
 * [Chapter 20 - Chapter 20 - Generics](Chapter20Notes.md)
+* [Chapter 10 - Classes and Objects: A Deeper Look](Chapter10Notes.md)
 * [Chapter 11 - OOP: Inheritance](Chapter11Notes.md)
