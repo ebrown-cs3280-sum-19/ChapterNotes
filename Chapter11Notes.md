@@ -37,7 +37,7 @@ Base classes tend to be more *general* and derived classes more *specific*.
 
 ### UML class hierarchy ###
 
-![uml class hierarchy](images\uml-class-hierarchy.png)
+![uml class hierarchy](images/uml-class-hierarchy.png)
 
 * *hollow triangle* arrows represent an *is-a* relationship
 * Employee is a CommunitMember
