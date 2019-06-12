@@ -149,7 +149,7 @@ Using properties throughout a class to access the class’s instance variables n
 
 ### Good Programming Practice 10.1 ###
 
-When you need to include an identifier in a string literal, use the `~~nameof~~` operator rather than hard coding the identifier’s name in the string.
+When you need to include an identifier in a string literal, use the `nameof` operator rather than hard coding the identifier’s name in the string.
 If you right click an identifier in Visual Studio then use the Rename… option to change the identifier’s name throughout your code, the string that `nameof` returns will be updated automatically with the identifier’s new name.
 
 ## Composition ##
