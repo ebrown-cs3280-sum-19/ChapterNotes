@@ -94,10 +94,10 @@ Declaring a derived class does not affect its base class’s source code. Inheri
 
 `object` methods inherited by all classes
 
-* `Equals`
-* `Finalize`
-* `GetHashCode`
-* `GetType`
-* `MemberwiseClone`
-* `ReferenceEquals`
-* `ToString`
+* `Equals` - compares the current object to another object for equality.
+* `Finalize` - cannot be explicitly called or declared. When a class contains a destructor, the compiler implicitly renames it to override the Finalize method
+* `GetHashCode` - A used as the key for a hashtable when it's set as a key
+* `GetType` - returns an object of class `Type` that contains info about the type such as class name
+* `MemberwiseClone` - `protected` method, takes no arguments makes a copy of the object on which it was called. Shallow copy, only references are copied
+* `ReferenceEquals` - `static` method recieves two `object` references, returns true if they're the same instance
+* `ToString` - returns a `string` representation of the current object. Default returns namespace followed by a dot and the class name
