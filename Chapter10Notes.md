@@ -149,8 +149,8 @@ Using properties throughout a class to access the class’s instance variables n
 
 ### Good Programming Practice 10.1 ###
 
-When you need to include an identifier in a string literal, use the nameof operator rather than hard coding the identifier’s name in the string.
-If you right click an identifier in Visual Studio then use the Rename… option to change the identifier’s name throughout your code, the string that nameof returns will be updated automatically with the identifier’s new name.
+When you need to include an identifier in a string literal, use the `~~nameof~~` operator rather than hard coding the identifier’s name in the string.
+If you right click an identifier in Visual Studio then use the Rename… option to change the identifier’s name throughout your code, the string that `nameof` returns will be updated automatically with the identifier’s new name.
 
 ## Composition ##
 
@@ -158,3 +158,86 @@ If you right click an identifier in Visual Studio then use the Rename… option 
 * composition is when you have class members that our objects of other classes
 * ie: `AlarmClock` class could have two `Time` class members - the current time and the alarm time
 * or: `Person` class could have `Mother` and `Father` properties that are references to other `Person` objects
+
+## Extension Methods ##
+
+Example Code:
+```[C#]
+
+ 1    // Fig. 10.16: TimeExtensionsTest.cs
+ 2    // Demonstrating extension methods.
+ 3    using System;
+ 4
+ 5    class TimeExtensionsTest
+ 6    {
+ 7    static void Main()
+ 8    {
+ 9       var myTime = new Time2(); // call Time2 constructor
+10       myTime.SetTime(11,34, 15); // set the time to 11:34:15
+11
+12       // test the DisplayTime extension method
+13       Console.Write("Use the DisplayTime extension method: ");
+14       myTime.DisplayTime();
+15
+16       // test the AddHours extension method
+17       Console.Write("Add 5 hours with the AddHours extension method: ");
+18       var timeAdded = myTime.AddHours(5); // add five hours   
+19       timeAdded.DisplayTime(); // display the new Time2 object
+20
+21       // add hours and display the time in one statement
+22       Console.Write("Add 15 hours with the AddHours extension method: ");
+23       myTime.AddHours(15).DisplayTime(); // add hours and display time
+24
+25       // use fully qualified extension-method name to display the time
+26       Console.Write("Use fully qualified extension-method name: ");
+27       TimeExtensions.DisplayTime(myTime);
+28      }
+29     }
+30
+31    // extension-methods class
+32    static class TimeExtensions
+33    {
+34        // display the Time2 object in console
+35        public static void DisplayTime(this Time2 aTime)
+36        {
+37           Console.WriteLine(aTime.ToString());
+38        }
+39
+40        // add the specified number of hours to the time
+41        // and return a new Time2 object
+42        public static Time2 AddHours(this Time2 aTime, int hours )
+43       {
+44         // create a new Time2 object
+45         var newTime = new Time2() {
+46            Minute = aTime.Minute, Second = aTime.Second};
+47
+48         // add the specified number of hours to the given time
+49         newTime.Hour = (aTime.Hour + hours) % 24;
+50
+51         return newTime; // return the new Time2 object
+52       }
+53     }
+```
+
+Output
+
+```[output]
+Use the DisplayTime extension method: 11:34:15 AM
+Add 5 hours with the AddHours extension method: 4:34:15 PM
+Add 15 hours with the AddHours extension method: 2:34:15 AM
+Use fully qualified extension-method name: 11:34:15 AM
+```
+
+Why use extension methods?
+
+Allows you to add functionality to a class without modifying it
+
+When to use extension methods?
+
+* when you don't control the types being extended
+* where you don't want to force the implementor to provide code that can be done using the existing methods
+
+Times **not** to use them?
+
+* When polymorphism is being used. Your extension method could get shadowed.
+* When you need to access the private/protected members in the class
