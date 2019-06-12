@@ -92,7 +92,7 @@ Declaring a derived class does not affect its base class’s source code. Inheri
 * `object` is an alias for `System.Object` 
 * It's non-`static` methods are inherited by *all* classes
 
-`object` methods inherited by all classes
+`object` methods inherited by all classes. This means all classes will have the following methods
 
 * `Equals` - compares the current object to another object for equality.
 * `Finalize` - cannot be explicitly called or declared. When a class contains a destructor, the compiler implicitly renames it to override the Finalize method
