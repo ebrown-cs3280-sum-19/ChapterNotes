@@ -44,7 +44,6 @@ public SimpleTime(int hour, int minute, int second)
 
 ### Software Engineering Observation 10.4 ###
 
-
 Using properties throughout a class to access the class’s instance variables normally eliminates shadowing because property names use Pascal Case naming (capital first letter) and parameter names use Camel Case (lowercase first letter).
 
 ## Overloaded Constructors ##
@@ -162,8 +161,8 @@ If you right click an identifier in Visual Studio then use the Rename… option 
 ## Extension Methods ##
 
 Example Code:
-```[C#]
 
+```[C#]
  1    // Fig. 10.16: TimeExtensionsTest.cs
  2    // Demonstrating extension methods.
  3    using System;
