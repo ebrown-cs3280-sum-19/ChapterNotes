@@ -14,3 +14,5 @@
 * [Chapter 20 - Chapter 20 - Generics](Chapter20Notes.md)
 * [Chapter 10 - Classes and Objects: A Deeper Look](Chapter10Notes.md)
 * [Chapter 11 - OOP: Inheritance](Chapter11Notes.md)
+* [Chapter 12 - OOP: Polymorphism](Chapter12Notes.md)
+
