@@ -270,7 +270,19 @@ if employee is not null, salary is assignment the employee's `BaseSalary` otherw
 ## Exception Filters - `when` Clause ##
 
 * allows for different `catch` blocks for the same exception type just with different conditions
+* For Example: you may want to handle `HttpException` differently based on its `ErrorCode`
 
 ```[C#]
 catch(ExceptionType name) when(condition)
+```
+
+```[C#]
+catch (HttpException ex) when (exception.ErrorCode == 401)
+{
+    //handle authorization
+}
+catch (HttpException ex) when (exception.ErrorCode == 503)
+{
+    //handle service is unavailable
+}
 ```
