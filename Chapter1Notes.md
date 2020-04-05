@@ -33,12 +33,13 @@
   * Java
   * python
   * javascript
+  * Scala
 * Functional - Stateless programming, avoids making changes to data. Based on lambda calculus
-  *lisp
-  *Haskell
-  *Clojure
-  *Python (supported)
-  *Javascript (supported)
+  * Haskell
+  * Lisp languages (like Clojure)
+  * Python (supported)
+  * Javascript (supported)
+  * Scala (supported)
 * Data serialization languages - Used primarily for data transfer and storage
   * XML
   * JSON
